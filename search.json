@@ -1,0 +1,15 @@
+---
+layout: none
+---
+[
+  {% assign pages_list = site.pages | concat: site.documents %}
+  {% for page in pages_list %}
+    {% if page.title and page.title != "" and page.url != "/search.json" %}
+  {
+    "title": {{ page.title | jsonify }},
+    "url": "{{ site.baseurl }}{{ page.url }}"{% if page.description %},
+    "description": {{ page.description | jsonify }}{% endif %}
+  }{% unless forloop.last %},{% endunless %}
+    {% endif %}
+  {% endfor %}
+]

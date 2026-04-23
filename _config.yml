@@ -1,0 +1,24 @@
+title: "Ensiklopedia"
+description: "Ensiklopedia by RianHS"
+baseurl: "/ensiklopedia"   
+url: "https://rianhs.github.io"
+
+# Mesin template
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  math_engine: mathjax   # opsional, KaTeX sudah ditangani JS
+
+# Agar Jekyll ikut memproses file HTML di _layouts
+include:
+  - _layouts
+
+# File yang tidak perlu di-build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules

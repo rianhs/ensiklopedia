@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} | Encyclopedia</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    const mermaidTheme = document.documentElement.classList.contains('dark') ? 'dark' : 'neutral';
+    mermaid.initialize({ startOnLoad: false, theme: mermaidTheme });
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('code.language-mermaid').forEach(code => {
+        const pre = code.parentElement;
+        const div = document.createElement('div');
+        div.className = 'mermaid';
+        div.textContent = code.textContent;
+        pre.replaceWith(div);
+      });
+      mermaid.run();
+    });
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Linux+Libertine:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: { brand: '#4f46e5' }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* =========================================================
+       LAYOUT & TIPOGRAFI DASAR
+       ========================================================= */
+    .prose-content {
+      max-width: 825px;
+      margin: 0 auto;
+      line-height: 1.75;
+      font-size: var(--base-font-size);
+      transition: font-size 0.2s ease, font-family 0.2s ease;
+    }
+
+    :root { --base-font-size: 1.1rem; }
+    @media (max-width: 768px) { :root { --base-font-size: 1.0rem; } }
+
+    /* =========================================================
+       SCROLLBAR
+       ========================================================= */
+    body::-webkit-scrollbar { width: 10px; }
+    body::-webkit-scrollbar-track { background: rgba(148, 163, 184, 0.12); }
+    body::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 9999px; border: 2px solid transparent; background-clip: padding-box; }
+    .dark body::-webkit-scrollbar-track { background: rgba(100, 116, 139, 0.18); }
+    .dark body::-webkit-scrollbar-thumb { background: #64748b; }
+    body::-webkit-scrollbar-thumb:hover { background: #64748b; }
+
+    #sidebar::-webkit-scrollbar { width: 6px; }
+    #sidebar::-webkit-scrollbar-track { background: transparent; }
+    #sidebar::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 9999px; }
+    .dark #sidebar::-webkit-scrollbar-thumb { background: #64748b; }
+
+    /* =========================================================
+       TOC AKTIF
+       ========================================================= */
+    .toc-active {
+      color: #4f46e5 !important;
+      font-weight: 600;
+      border-left: 2px solid #4f46e5;
+      background-color: rgba(79, 70, 229, 0.1);
+      border-radius: 0px !important;
+    }
+
+    header, aside { transition: background-color 0.3s ease; }
+
+    /* =========================================================
+       CHART & TABEL
+       ========================================================= */
+    .chart-wrapper {
+      position: relative;
+      margin: 2rem auto;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    #sidebar { transition: transform 0.3s ease, width 0.3s ease, opacity 0.3s ease, margin 0.3s ease; }
+    main { min-width: 0; }
+
+    .table-container {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 0.25rem;
+      margin-bottom: 0.5rem;
+    }
+    .dark .table-container { border-color: rgba(255,255,255,0.05); background-color: rgba(255,255,255,0.02); }
+    .table-wrapper { position: relative; margin-bottom: 2rem; margin-top: 0rem; }
+
+    .scroll-hint {
+      display: none;
+      font-size: 0.75rem;
+      color: #64748b;
+      background-color: rgba(100, 116, 139, 0.08);
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      margin-bottom: 0.5rem;
+      width: max-content;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    @media (max-width: 768px) { .scroll-hint { display: inline-flex; } }
+    @media (max-width: 768px) {
+      .table-container table th,
+      .table-container table td { padding: 0.75rem 1rem; }
+    }
+
+    /* =========================================================
+       HEADING GAYA WIKIPEDIA
+       Hierarki: h2 = garis bawah penuh (seperti section Wikipedia)
+                 h3 = tebal, tanpa garis
+                 h4 = tebal, ukuran lebih kecil
+                 h5/h6 = italic + tebal, ukuran kecil
+       ========================================================= */
+    h2, h3, h4, h5, h6 { scroll-margin-top: 5rem; }
+
+    article h2, article h3, article h4, article h5, article h6 { color: #0f172a; }
+    .dark article h2, .dark article h3, .dark article h4,
+    .dark article h5, .dark article h6 { color: #f8fafc; }
+
+    /* H2 — setara "section" di Wikipedia: garis bawah abu-abu penuh */
+    article h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-top: 2.5rem;
+      margin-bottom: 0.35rem;
+      line-height: 1.4;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid #a2a9b1;
+    }
+    .dark article h2 { border-bottom-color: #3d4451; }
+
+    /* H3 — tebal, tanpa garis */
+    article h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 0.35rem;
+      line-height: 1.4;
+    }
+
+    /* H4 — tebal, sedikit lebih kecil */
+    article h4 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-top: 1.75rem;
+      margin-bottom: 0.35rem;
+      line-height: 1.4;
+    }
+
+    /* H5 — tebal + italic */
+    article h5 {
+      font-size: 1rem;
+      font-weight: 700;
+      font-style: italic;
+      margin-top: 1.5rem;
+      margin-bottom: 0.35rem;
+      line-height: 1.4;
+    }
+
+    /* H6 — italic saja, ukuran normal */
+    article h6 {
+      font-size: 1rem;
+      font-weight: 400;
+      font-style: italic;
+      margin-top: 1.25rem;
+      margin-bottom: 0.35rem;
+      line-height: 1.4;
+    }
+
+    /* =========================================================
+       PARAGRAF & KONTEN ARTIKEL
+       ========================================================= */
+    article p { margin-bottom: 1rem; }
+
+    article pre { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    article pre code { font-size: calc(var(--base-font-size) - 0.1rem); }
+
+    article blockquote {
+      padding: 1.5rem 2rem;
+      border-left-width: 4px;
+      border-color: #4f46e5;
+      background-color: rgba(79, 70, 229, 0.05);
+      font-style: italic;
+      margin: 2rem 0;
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    article ul { list-style-type: disc; margin-left: 1.5rem; margin-bottom: 1.5rem; }
+    article ol { list-style-type: decimal; margin-left: 1.5rem; margin-bottom: 1.5rem; }
+    article ol ol { list-style-type: lower-alpha; }
+    article ol ol ol { list-style-type: decimal; }
+    article ol ol ol ol { list-style-type: lower-alpha; }
+    article ul > li + li, article ol > li + li { margin-top: 0.5rem; }
+    article ul.compact > li + li, article ol.compact > li + li { margin-top: 0; }
+    article ul ul { list-style-type: circle; }
+    article li > ul, article li > ol { margin-top: 0.5rem; margin-bottom: 0.5rem; margin-left: 1.5rem; }
+    article ul ul, article ul ol, article ol ul, article ol ol { margin-bottom: 0.5rem; }
+
+    /* =========================================================
+       KOMPONEN: CALLOUT, FIGURE, KUIS
+       ========================================================= */
+    [data-quiz] button { padding: 0.5rem 1rem !important; font-size: 0.875rem !important; border-radius: 0.5rem !important; }
+    [data-feedback] { font-size: 0.875rem; margin-top: 1rem; }
+    [data-quiz] { font-size: calc(var(--base-font-size) - 0.1rem); }
+    [data-quiz] h4 { font-size: 1.15rem !important; margin-top: 0 !important; }
+
+    figure { margin: 2.5rem 0; display: flex; flex-direction: column; align-items: center; }
+    figure img { border-radius: 0.25rem; border: 1px solid rgba(0,0,0,0.08); max-width: 100%; height: auto; display: block; }
+    .dark figure img { border-color: rgba(255,255,255,0.05); }
+    figcaption { font-size: var(--base-font-size); color: #64748b; margin-top: 0.5rem; margin-bottom: 1rem; }
+
+    .callout { display: flex; gap: 1rem; align-items: flex-start; padding: 1.25rem; background-color: rgba(79, 70, 229, 0.06); border-radius: 0.75rem; margin: 2rem 0; border: 1px solid rgba(79, 70, 229, 0.1); }
+    .callout i { flex-shrink: 0; color: #4f46e5; margin-top: 0.15rem; }
+    .callout p { margin-bottom: 0 !important; font-size: 1rem; line-height: 1.6; }
+    .dark .callout { background-color: rgba(79, 70, 229, 0.1); border-color: rgba(255, 255, 255, 0.05); }
+
+    .btn-container { display: flex; justify-content: flex-end; margin: 1rem 0 2rem 0; }
+    .btn-action { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; font-size: 0.875rem; font-weight: 500; border-radius: 0.5rem; background-color: #4f46e5; color: white !important; text-decoration: none !important; transition: all 0.2s ease; }
+    .btn-action:hover { background-color: #4338ca; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2); }
+    .dark .btn-action:hover { box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); }
+
+    /* =========================================================
+       FONT SERIF
+       ========================================================= */
+    .font-serif-mode { font-family: 'Lora', ui-serif, Georgia, serif; }
+    .font-serif-mode #tocList { font-size: 0.9rem; }
+    .prose-content .text-sm { font-size: var(--base-font-size); }
+
+    /* =========================================================
+       TABEL
+       ========================================================= */
+    .table-container table th, .table-container table td {
+      line-height: 1.75;
+      font-size: calc(var(--base-font-size) - 0.125rem);
+    }
+
+    /* =========================================================
+       CHART CAPTION
+       ========================================================= */
+    .chart-caption {
+      font-size: calc(var(--base-font-size) - 0.1rem);
+      color: #64748b;
+      text-align: center;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .dark .chart-caption { color: #64748b; }
+
+    /* =========================================================
+       TAUTAN DALAM KONTEN
+       ========================================================= */
+    #markdown-content a {
+      color: #4f46e5;
+      text-underline-offset: 3px;
+      transition: color 0.2s ease, text-decoration-color 0.2s ease;
+    }
+    #markdown-content a:hover {
+      color: #4338ca;
+      text-decoration: underline;
+      text-decoration-color: rgba(79, 70, 229, 0.5);
+    }
+    .dark #markdown-content a { color: #818cf8; }
+    .dark #markdown-content a:hover {
+      color: #a5b4fc;
+      text-decoration-color: rgba(129, 140, 248, 0.5);
+    }
+
+    /* Mermaid */
+    .mermaid svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+
+    /* =========================================================
+       SEARCH BOX DI SIDEBAR
+       ========================================================= */
+    #search-input {
+      width: 100%;
+      padding: 0.4rem 0.75rem 0.4rem 2.25rem;
+      font-size: 0.8rem;
+      background-color: rgba(0,0,0,0.04);
+      border: 1px solid #cbd5e1;
+      border-radius: 0.5rem;
+      outline: none;
+      transition: border-color 0.2s, background-color 0.2s;
+      color: #0f172a;
+    }
+    .dark #search-input {
+      background-color: rgba(255,255,255,0.05);
+      border-color: #334155;
+      color: #f1f5f9;
+    }
+    #search-input:focus { border-color: #4f46e5; background-color: white; }
+    .dark #search-input:focus { background-color: rgba(255,255,255,0.08); }
+
+    #search-results {
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      max-height: 220px;
+      overflow-y: auto;
+    }
+    #search-results a {
+      display: block;
+      padding: 0.4rem 0.5rem;
+      border-radius: 0.375rem;
+      color: #334155;
+      text-decoration: none;
+      transition: background-color 0.15s;
+      line-height: 1.4;
+    }
+    .dark #search-results a { color: #cbd5e1; }
+    #search-results a:hover { background-color: rgba(79,70,229,0.1); color: #4f46e5; }
+    .dark #search-results a:hover { color: #818cf8; }
+    #search-results .search-empty {
+      padding: 0.4rem 0.5rem;
+      color: #94a3b8;
+      font-style: italic;
+    }
+
+    /* =========================================================
+       NAVBOX — DIPAKAI LANGSUNG DI MARKDOWN
+       Cara pakai di .md:
+       <div class="navbox">
+         <div class="navbox-title">Portal Biostatistika Veteriner</div>
+         <div class="navbox-group">
+           <span class="navbox-group-label">Konsep Dasar</span>
+           <div class="navbox-links">
+             <a href="/statistika/distribusi-normal">Distribusi Normal</a> ·
+             <a href="/statistika/uji-hipotesis">Uji Hipotesis</a>
+           </div>
+         </div>
+       </div>
+       ========================================================= */
+    .navbox {
+      border: 1px solid #a2a9b1;
+      border-radius: 0.25rem;
+      font-size: 0.875rem;
+      margin: 2.5rem 0 1rem 0;
+      overflow: hidden;
+    }
+    .dark .navbox { border-color: #3d4451; }
+
+    .navbox-title {
+      background-color: #cee0f3;
+      padding: 0.4rem 0.75rem;
+      font-weight: 700;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #0f172a;
+    }
+    .dark .navbox-title { background-color: #1e3a5f; color: #e2e8f0; }
+
+    .navbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      padding: 0.35rem 0.75rem;
+      border-top: 1px solid #a2a9b1;
+      gap: 0.5rem;
+    }
+    .dark .navbox-group { border-top-color: #3d4451; }
+
+    .navbox-group-label {
+      font-weight: 700;
+      min-width: 8rem;
+      color: #334155;
+      font-size: 0.8rem;
+    }
+    .dark .navbox-group-label { color: #94a3b8; }
+
+    .navbox-links {
+      flex: 1;
+      color: #0f172a;
+      line-height: 1.7;
+    }
+    .dark .navbox-links { color: #e2e8f0; }
+    .navbox-links a {
+      color: #4f46e5 !important;
+      text-decoration: none;
+    }
+    .dark .navbox-links a { color: #818cf8 !important; }
+    .navbox-links a:hover { text-decoration: underline; }
+
+    /* =========================================================
+       FOOTER ARTIKEL (word count + credit)
+       ========================================================= */
+    .article-footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e2e8f0;
+    }
+    .dark .article-footer { border-top-color: #1e293b; }
+  </style>
+</head>
+
+<body class="bg-[#f5f0e8] dark:bg-[#0a0a0a] text-slate-800 dark:text-slate-200 antialiased transition-colors duration-300">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 w-full bg-[#f5f0e8]/80 dark:bg-[#0a0a0a]/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-[1400px] mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <button id="toggleSidebar" class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition" title="Toggle Sidebar">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+        <div class="hidden md:flex items-center gap-2 text-sm">
+          {% unless page.url == '/' or page.url == '/index.html' %}
+          <a href="{{ site.baseurl }}/" class="p-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition text-slate-500 dark:text-slate-400 hover:text-brand dark:hover:text-brand" title="Kembali ke Beranda">
+            <i data-lucide="house" class="w-4 h-4"></i>
+          </a>
+          <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-400 dark:text-slate-600"></i>
+          {% endunless %}
+          <span class="font-bold tracking-tight text-lg text-slate-800 dark:text-slate-200">{{ page.title }}</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-1 md:gap-2">
+        <div class="flex items-center border border-slate-200 dark:border-slate-800 rounded-lg overflow-hidden mr-1">
+          <button id="decreaseFont" class="px-2 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 transition text-xs font-bold" title="Kecilkan Huruf">A-</button>
+          <div class="w-[1px] h-4 bg-slate-200 dark:bg-slate-800"></div>
+          <button id="increaseFont" class="px-2 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 transition text-xs font-bold" title="Besarkan Huruf">A+</button>
+        </div>
+        <button id="fontToggle" class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition" title="Ganti Jenis Huruf">
+          <i data-lucide="type" class="w-5 h-5"></i>
+        </button>
+        <button id="themeToggle" class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition">
+          <i data-lucide="sun" id="sunIcon" class="w-5 h-5 hidden dark:block"></i>
+          <i data-lucide="moon" id="moonIcon" class="w-5 h-5 block dark:hidden"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="max-w-[1400px] mx-auto flex">
+
+    <!-- SIDEBAR -->
+    <aside id="sidebar" class="fixed inset-y-0 left-0 z-30 w-72 bg-[#f5f0e8] dark:bg-[#0a0a0a] border-r border-slate-200 dark:border-slate-800 pt-20 overflow-y-auto transform -translate-x-full lg:translate-x-0 lg:sticky lg:top-0 lg:h-[calc(100vh-64px)] lg:pt-8">
+      <nav class="px-4 pb-10">
+
+        <!-- Kembali ke beranda -->
+        {% unless page.url == '/' or page.url == '/index.html' %}
+        <a href="{{ site.baseurl }}/" class="flex items-center gap-2 px-3 py-2 mb-3 text-sm text-slate-500 dark:text-slate-400 hover:text-brand dark:hover:text-brand transition-colors group">
+          <i data-lucide="arrow-left" class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5"></i>
+          <span>Kembali ke Beranda</span>
+        </a>
+        <div class="border-t border-slate-200 dark:border-slate-800 mb-3"></div>
+        {% endunless %}
+
+        <!-- SEARCH BOX -->
+        <!-- search.json harus ada di root repo. Lihat instruksi di bawah. -->
+        <div class="mb-4">
+          <div class="relative">
+            <i data-lucide="search" class="absolute left-2 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 pointer-events-none"></i>
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Cari artikel…"
+              autocomplete="off"
+              spellcheck="false"
+            />
+          </div>
+          <div id="search-results"></div>
+        </div>
+
+        <div class="border-t border-slate-200 dark:border-slate-800 mb-3"></div>
+
+        <!-- TOC -->
+        <h2 class="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-widest mb-3 px-3">Daftar Isi</h2>
+        <div id="tocList" class="space-y-1 text-sm text-slate-600 dark:text-slate-400"></div>
+      </nav>
+    </aside>
+
+    <!-- KONTEN UTAMA -->
+    <main class="flex-1 px-4 py-8 md:py-12 lg:px-12">
+      <article class="prose-content">
+
+        <header class="mb-8">
+          <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-3">
+            {{ page.title }}
+          </h1>
+          {% if page.description %}
+          <p class="text-lg text-slate-600 dark:text-slate-400 mb-3">{{ page.description }}</p>
+          {% endif %}
+        </header>
+
+        <!-- KONTEN DARI MARKDOWN -->
+        <div id="markdown-content">
+          {{ content }}
+        </div>
+
+        <!-- FOOTER ARTIKEL: word count + credit -->
+        <footer class="article-footer">
+          {% unless page.url == '/' or page.url == '/index.html' %}
+          <p id="word-count-info" class="text-xs text-slate-400 dark:text-slate-600 mb-1"></p>
+          {% endunless %}
+          <p class="text-xs text-slate-400 dark:text-slate-600">Encyclopedia · RianHS</p>
+        </footer>
+
+      </article>
+    </main>
+  </div>
+
+  <script>
+    // =========================================================
+    // 1. INISIALISASI STATE
+    // =========================================================
+    const html = document.documentElement;
+    const body = document.body;
+
+    const savedTheme    = localStorage.getItem('theme')    || 'dark';
+    const savedFontMode = localStorage.getItem('fontMode') || 'sans';
+    const defaultFontSize = window.innerWidth <= 768 ? 1.0 : 1.1;
+    const savedFontSize   = parseFloat(localStorage.getItem('fontSize')) || defaultFontSize;
+
+    if (savedTheme === 'dark') { html.classList.add('dark'); }
+    else                       { html.classList.remove('dark'); }
+
+    if (savedFontMode === 'serif') { body.classList.add('font-serif-mode'); }
+    else                           { body.classList.remove('font-serif-mode'); }
+
+    let currentFontSize = savedFontSize;
+    const updateFontSize = (size) => {
+      html.style.setProperty('--base-font-size', `${size}rem`);
+      localStorage.setItem('fontSize', size);
+    };
+    updateFontSize(currentFontSize);
+
+    lucide.createIcons();
+
+    if (typeof mermaid !== 'undefined') mermaid.run();
+
+    // =========================================================
+    // 2. TOC OTOMATIS
+    // =========================================================
+    function buildTOC() {
+      const content = document.getElementById('markdown-content');
+      const tocList = document.getElementById('tocList');
+      if (!content || !tocList) return;
+
+      const slugify = (text) =>
+        text.toLowerCase()
+            .replace(/[^\w\s-]/g, '')
+            .replace(/\s+/g, '-')
+            .replace(/-+/g, '-');
+
+      const headings = Array.from(
+        content.querySelectorAll('h2, h3, h4, h5, h6')
+      ).filter(el => !el.closest('[data-quiz]'));
+
+      if (headings.length === 0) return;
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            document.querySelectorAll('#tocList a').forEach(el => el.classList.remove('toc-active'));
+            const activeLink = document.querySelector(`#tocList a[data-target="${id}"]`);
+            if (activeLink) activeLink.classList.add('toc-active');
+          }
+        });
+      }, { rootMargin: '-10% 0px -75% 0px' });
+
+      headings.forEach((heading, index) => {
+        if (!heading.id) {
+          const baseId = slugify(heading.textContent || `bagian-${index + 1}`);
+          let finalId = baseId;
+          let counter = 2;
+          while (document.getElementById(finalId) && document.getElementById(finalId) !== heading) {
+            finalId = `${baseId}-${counter}`;
+            counter++;
+          }
+          heading.id = finalId;
+        }
+
+        observer.observe(heading);
+
+        const link = document.createElement('a');
+        link.href = `#${heading.id}`;
+        link.textContent = heading.textContent;
+        link.setAttribute('data-target', heading.id);
+
+        const tag = heading.tagName.toLowerCase();
+        if (tag === 'h2') {
+          link.className = 'block px-4 py-1.5 text-[0.875rem] hover:text-brand transition-all duration-200 whitespace-normal leading-tight mb-0.5 font-semibold';
+        } else if (tag === 'h3') {
+          link.className = 'block px-6 py-1.5 text-[0.8rem] hover:text-brand transition-all whitespace-normal leading-tight mb-0.5';
+        } else if (tag === 'h4') {
+          link.className = 'block px-8 py-1 text-[0.75rem] hover:text-brand transition-all whitespace-normal leading-tight mb-0.5';
+        } else if (tag === 'h5') {
+          link.className = 'block px-10 py-1 text-[0.72rem] hover:text-brand transition-all whitespace-normal leading-tight mb-0.5';
+        } else if (tag === 'h6') {
+          link.className = 'block px-12 py-1 text-[0.7rem] hover:text-brand transition-all whitespace-normal leading-tight mb-0.5';
+        }
+
+        tocList.appendChild(link);
+      });
+    }
+
+    // =========================================================
+    // 3. SEARCH LINTAS ARTIKEL
+    //    Membaca /search.json yang di-generate Jekyll.
+    //    Jika file tidak ada, kotak search tetap muncul
+    //    tapi tidak menampilkan hasil.
+    // =========================================================
+    async function initSearch() {
+      const input   = document.getElementById('search-input');
+      const results = document.getElementById('search-results');
+      if (!input || !results) return;
+
+      let articles = [];
+
+      try {
+        // Sesuaikan path jika situs kamu ada di subdirektori,
+        // misalnya: '{{ site.baseurl }}/search.json'
+        const res = await fetch('{{ site.baseurl }}/search.json');
+        if (res.ok) articles = await res.json();
+      } catch (e) {
+        // Gagal memuat search.json — search tidak aktif, tidak ada error visible
+      }
+
+      input.addEventListener('input', () => {
+        const query = input.value.trim().toLowerCase();
+        results.innerHTML = '';
+
+        if (query.length < 2) return;
+
+        const matched = articles.filter(a =>
+          a.title.toLowerCase().includes(query)
+        ).slice(0, 8);
+
+        if (matched.length === 0) {
+          results.innerHTML = '<div class="search-empty">Tidak ada artikel ditemukan.</div>';
+          return;
+        }
+
+        matched.forEach(a => {
+          const link = document.createElement('a');
+          link.href = a.url;
+          link.textContent = a.title;
+          results.appendChild(link);
+        });
+      });
+
+      // Tutup hasil saat klik di luar
+      document.addEventListener('click', (e) => {
+        if (!input.contains(e.target) && !results.contains(e.target)) {
+          results.innerHTML = '';
+          // Jangan kosongkan input — biarkan teks tetap ada
+        }
+      });
+    }
+
+    // =========================================================
+    // 4. GRAFIK OTOMATIS
+    // =========================================================
+    function initCharts() {
+      document.querySelectorAll('.js-chart').forEach(canvas => {
+        const type    = canvas.dataset.type;
+        const label   = canvas.dataset.label;
+        const labels  = JSON.parse(canvas.dataset.labels);
+        const values  = JSON.parse(canvas.dataset.values);
+
+        new Chart(canvas, {
+          type: type,
+          data: {
+            labels: labels,
+            datasets: [{
+              label: label,
+              data: values,
+              backgroundColor: '#4f46e5',
+              borderColor: '#4f46e5',
+              borderWidth: type === 'line' ? 2 : 0,
+              borderRadius: 6,
+              tension: 0.3
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: {
+              y: {
+                beginAtZero: true,
+                grid: { color: html.classList.contains('dark') ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' }
+              },
+              x: { grid: { display: false } }
+            }
+          }
+        });
+      });
+    }
+
+    // =========================================================
+    // 5. KUIS
+    // =========================================================
+    function initQuiz() {
+      document.querySelectorAll('[data-quiz]').forEach(quiz => {
+        const checkBtn  = quiz.querySelector('[data-check]');
+        const resetBtn  = quiz.querySelector('[data-reset]');
+        const feedback  = quiz.querySelector('[data-feedback]');
+
+        checkBtn.addEventListener('click', () => {
+          const selected = quiz.querySelector('input[type="radio"]:checked');
+          if (!selected) return alert('Pilih salah satu jawaban!');
+          feedback.classList.remove('hidden', 'text-emerald-500', 'text-rose-500');
+          if (selected.hasAttribute('data-correct')) {
+            feedback.textContent = '✓ Jawaban Anda benar!';
+            feedback.classList.add('text-emerald-500');
+          } else {
+            feedback.textContent = '✗ Belum tepat.';
+            feedback.classList.add('text-rose-500');
+          }
+        });
+
+        resetBtn.addEventListener('click', () => {
+          quiz.querySelectorAll('input').forEach(i => i.checked = false);
+          feedback.classList.add('hidden');
+        });
+      });
+    }
+
+    // =========================================================
+    // 6. WORD COUNT — ditampilkan di footer artikel
+    // =========================================================
+    function updateWordCount() {
+      const content = document.getElementById('markdown-content');
+      const output  = document.getElementById('word-count-info');
+      if (!content || !output) return;
+
+      const text      = content.innerText.trim();
+      const words     = text.split(/\s+/).filter(w => w.length > 0);
+      const wordCount = words.length;
+      const minTime   = Math.ceil(wordCount / 200);
+      const maxTime   = Math.ceil(wordCount / 150);
+
+      output.textContent =
+        `${wordCount.toLocaleString('id-ID')} kata · estimasi baca ${minTime}–${maxTime} menit`;
+    }
+
+    // =========================================================
+    // 7. WRAP TABEL RESPONSIF
+    // =========================================================
+    function wrapTables() {
+      const content = document.getElementById('markdown-content');
+      if (!content) return;
+
+      content.querySelectorAll('table').forEach(table => {
+        if (table.closest('.table-container')) return;
+
+        const wrapper   = document.createElement('div');
+        wrapper.className = 'table-wrapper';
+
+        const hint = document.createElement('div');
+        hint.className = 'scroll-hint';
+        hint.innerHTML = `<i data-lucide="move-horizontal" class="w-3 h-3"></i><span>Geser tabel untuk melihat selengkapnya</span>`;
+
+        const container = document.createElement('div');
+        container.className = 'table-container';
+
+        table.parentNode.insertBefore(wrapper, table);
+        container.appendChild(table);
+        wrapper.appendChild(hint);
+        wrapper.appendChild(container);
+
+        const colCount = table.querySelectorAll('thead tr th, thead tr td').length
+              || table.querySelectorAll('tbody tr:first-child td').length;
+        const minWidth = colCount <= 2 ? '320px'
+               : colCount <= 3 ? '480px'
+               : colCount <= 4 ? '600px'
+               : '800px';
+        table.style.minWidth = minWidth;
+        table.classList.add('w-full', 'text-left');
+
+        const thead = table.querySelector('thead');
+        if (thead) thead.classList.add('bg-[#e8e0d0]', 'dark:bg-slate-800/50', 'border-b', 'border-[#d4c9b5]', 'dark:border-slate-800');
+
+        table.querySelectorAll('th').forEach(th => th.classList.add('py-4', 'px-6', 'font-semibold', 'text-slate-900', 'dark:text-white'));
+        table.querySelectorAll('td').forEach(td => td.classList.add('py-4', 'px-6'));
+
+        const tbody = table.querySelector('tbody');
+        if (tbody) tbody.classList.add('divide-y', 'divide-[#d4c9b5]', 'dark:divide-slate-800');
+      });
+
+      lucide.createIcons();
+    }
+
+    // =========================================================
+    // 8. TOGGLE: TEMA, FONT, SIDEBAR
+    // =========================================================
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+    });
+
+    document.getElementById('fontToggle').addEventListener('click', () => {
+      body.classList.toggle('font-serif-mode');
+      localStorage.fontMode = body.classList.contains('font-serif-mode') ? 'serif' : 'sans';
+    });
+
+    document.getElementById('increaseFont').addEventListener('click', () => {
+      const maxSize = window.innerWidth <= 768 ? 1.2 : 1.4;
+      if (currentFontSize < maxSize) { currentFontSize = Math.round((currentFontSize + 0.05) * 100) / 100; updateFontSize(currentFontSize); }
+    });
+
+    document.getElementById('decreaseFont').addEventListener('click', () => {
+      const minSize = window.innerWidth <= 768 ? 0.75 : 0.9;
+      if (currentFontSize > minSize) { currentFontSize = Math.round((currentFontSize - 0.05) * 100) / 100; updateFontSize(currentFontSize); }
+    });
+
+    const sidebar       = document.getElementById('sidebar');
+    const toggleSidebar = document.getElementById('toggleSidebar');
+
+    toggleSidebar.addEventListener('click', () => {
+      if (window.innerWidth >= 1024) {
+        if (sidebar.style.display === 'none') {
+          sidebar.style.display = 'block';
+          setTimeout(() => sidebar.classList.remove('lg:opacity-0', 'lg:-ml-72'), 10);
+        } else {
+          sidebar.classList.add('lg:opacity-0', 'lg:-ml-72');
+          setTimeout(() => sidebar.style.display = 'none', 300);
+        }
+      } else {
+        sidebar.classList.toggle('-translate-x-full');
+      }
+    });
+
+    // =========================================================
+    // 9. JALANKAN SEMUA
+    // =========================================================
+    document.addEventListener('DOMContentLoaded', () => {
+      buildTOC();
+      wrapTables();
+      initCharts();
+      initQuiz();
+      updateWordCount();
+      initSearch();
+
+      lucide.createIcons();
+
+      if (typeof renderMathInElement === 'function') {
+        renderMathInElement(document.body, {
+          delimiters: [
+            { left: '$$', right: '$$', display: true  },
+            { left: '$',  right: '$',  display: false }
+          ]
+        });
+      }
+    });
+  </script>
+</body>
+</html>

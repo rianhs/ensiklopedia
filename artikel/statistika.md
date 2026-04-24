@@ -2,62 +2,39 @@
 layout: default
 title: "Statistika"
 ---
-**Statistics** is a branch of mathematics concerned with the [collection](data-collection.md), [organization](data-organization.md), [analysis](data-analysis.md), [interpretation](data-interpretation.md), and [presentation](data-presentation.md) of [data](data.md). It provides a framework for understanding variability, identifying patterns, and making informed decisions in the presence of uncertainty. Developed over centuries—from early governmental record-keeping to modern mathematical theory—statistics is now divided into two main branches: [descriptive statistics](descriptive-statistics.md), which summarizes data, and [inferential statistics](inferential-statistics.md), which enables generalizations from [samples](sample.md) to [populations](population.md) using probabilistic reasoning. Statistics is widely applied to support various fields such as scientific research, medicine, economics, public policy, and technology. With the rise of computing, statistical analysis increasingly relies on specialized [statistical software](statistical-software.md) and programming languages. Although statistics is essential across disciplines, its effectiveness depends on methodological rigor, high-quality data, and responsible interpretation.
+## Definisi
 
-## History
+Statistika (bahasa Inggris: statistics) adalah disiplin ilmu yang mempelajari cara mengumpulkan, menyusun, menganalisis, menginterpretasikan, dan menyajikan data. Ia bertujuan untuk menghasilkan kesimpulan yang objektif dan valid di tengah kondisi yang mengandung ketidakpastian.
 
-The origins of statistics can be traced to ancient civilizations, where early record-keeping supported governance, taxation, and population management. In ancient Egypt, Babylon, and China, rulers used basic forms of data collection to manage state affairs. The term “statistics” derives from the Latin status, meaning “state,” and originally referred to demographic and economic data gathered by governments.
+## Latar belakang
 
-<div style="text-align: center;">
-  <img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Table_of_Casualties_in_Natural_and_Political_Observations_Made_Upon_the_Bills_of_Mortality.jpg" 
-       alt="Table of casualties in the Bills of Mortality"
-       width="400"
-       style="display: block; margin: auto;">
-  <p>
-    <em>Figure: Table of casualties in the Bills of Mortality in 1676 (source: 
-      <a href="https://en.wikipedia.org/wiki/File:Table_of_Casualties_in_Natural_and_Political_Observations_Made_Upon_the_Bills_of_Mortality.jpg" target="_blank">Wikipedia</a>).
-    </em>
-  </p>
-</div>
+Alam semesta penuh dengan variasi dan ketidakpastian. Banyak fenomena yang bersifat stokastik. Artinya, fenomena tersebut mengandung unsur keacakan dan punya banyak kemungkinan sehingga hasil akhirnya tidak dapat diprediksi secara pasti (tidak deterministik). Saat kerangka kerja statistika belum ada, pengambilan keputusan cenderung didasarkan pada intuisi atau pengamatan subjektif yang rentan terhadap bias.
 
-The discipline began to formalize in the 17th and 18th centuries. John Graunt’s analysis of London’s Bills of Mortality in 1662 is considered one of the earliest examples of demographic statistics. Around the same time, probability theory emerged from the study of games of chance, with major contributions by Blaise Pascal and Pierre de Fermat. In the 18th century, Jacob Bernoulli and Pierre-Simon Laplace expanded probabilistic reasoning, laying the foundation for inferential statistics.
+Statistika muncul untuk menyelesaikan masalah ini. Ia digunakan untuk mengukur variasi dan menentukan apakah suatu kumpulan data memiliki pola yang bermakna atau sekadar fluktuasi acak yang terjadi secara kebetulan. Statistika terus berkembang untuk membantu pengambilan keputusan yang rasional di berbagai bidang ilmu pengetahuan dan dalam kehidupan sehari-hari.
 
-The 19th century marked the institutionalization of statistical thinking. Francis Galton introduced key concepts such as regression and correlation, while Karl Pearson formalized the correlation coefficient and founded the first academic department of statistics. In the early 20th century, Ronald A. Fisher transformed the field by integrating probability theory with experimental design and hypothesis testing, establishing the framework for modern statistical inference.
+## Sifat utama
 
-## Main branches
+Statistika terbagi menjadi dua cabang utama: statistika deskriptif dan statistika inferensial. Statistika deskriptif merangkum data yang ada tanpa menarik kesimpulan di luar data tersebut. Statistika inferensial menggunakan sampel untuk membuat pernyataan tentang populasi dengan memperhitungkan unsur ketidakpastian.
 
-Statistics is commonly divided into two main branches: [descriptive statistics](descriptive-statistics.md) and [inferential statistics](inferential-statistics.md). Descriptive statistics focuses on summarizing and organizing data. It involves calculating [measures of central tendency](measures-of-central-tendency.md), such as the mean, median, and mode, as well as [measures of variability](measures-of-variability.md), such as the range, variance, and standard deviation. These tools help describe the overall structure and spread of a dataset and are often complemented by visualizations such as histograms, box plots, and scatter diagrams.
+Dalam praktiknya, statistika biasanya diterapkan dengan urutan berikut:
+* Pengumpulan data adalah proses menghimpun dan mencatat data dari berbagai sumber secara sistematis untuk membuat kumpulan data.
+* Penyusunan data adalah proses menata dan mengatur data secara logis untuk memudahkan akses dan analisis data.
+* Analisis data adalah proses memeriksa data menggunakan teknik-teknik statistika untuk mengidentifikasi pola, tren, atau hubungan.
+* Penafsiran data adalah proses memberikan makna dan menarik kesimpulan dari data yang telah dianalisis untuk mengungkap informasi yang berguna dan mendukung pengambilan keputusan.
+* Penyajian data adalah proses menampilkan dan mengomunikasikan data yang telah dianalisis dan ditafsirkan dalam format yang jelas dan efektif kepada audiens.
 
-Inferential statistics, by contrast, is concerned with drawing conclusions from data samples about broader populations. This branch relies on probability theory to assess the reliability of estimates and to test hypotheses. Key techniques include confidence interval estimation, hypothesis testing (such as t-tests and chi-square tests), and regression analysis. These methods enable researchers to generalize findings, measure uncertainty, and assess the statistical significance of observed patterns.
+## Penerapan dalam kedokteran hewan
 
-## Statistical process
+Seorang dokter hewan ingin mengetahui efek pemberian formulasi pakan yang baru terhadap laju pertumbuhan berat badan sapi potong. Ia tidak dapat mengambil kesimpulan hanya dengan melihat laju pertumbuhan seekor sapi. Dengan statistika, ia membagi populasi sapi menjadi dua kelompok, yaitu kelompok perlakuan (pakan baru) dan kelompok kontrol (pakan standar). Ia kemudian membandingkan kenaikan berat badan pada kedua kelompok tersebut menggunakan uji statistika. Jika hasil analisis menunjukkan peningkatan berat badan yang bermakna secara matematis dan biologis, dokter hewan tersebut memiliki landasan ilmiah yang kuat untuk menyatakan bahwa pakan baru tersebut memang lebih baik. Ia pun dapat merekomendasikan perubahan manajemen nutrisi dengan risiko kesalahan yang terukur.
 
-The practice of statistics typically follows a structured sequence of steps that transform raw data into meaningful insights. These five components—data collection, organization, analysis, interpretation, and presentation—form the foundation of statistical inquiry, ensuring that information is handled systematically and conclusions are based on evidence.
+## Asumsi dan keterbatasan
 
-- [Data collection](data-collection.md) is the initial phase, involving the systematic gathering and recording data from observations, experiments, surveys, or existing records. The quality of the data—its accuracy, relevance, and representativeness—is critical to the validity of all subsequent steps.
+Statistika hanyalah alat bantu. Ia tidak bisa menolong desain penelitian yang buruk. Jika cara pengumpulan datanya cacat, maka teknik statistika secanggih apa pun tidak akan mampu menghasilkan kesimpulan yang tepat. Selain itu, setiap uji statistika bertumpu pada asumsi tertentu tentang data. Statistika juga sering disalahpahami sebagai alat untuk membuktikan kepastian yang mutlak, padahal ilmu ini hanya bekerja pada tingkat probabilitas. 
 
-- [Data organization](data-organization.md) refers to preparing and structuring data for analysis. This may include correcting errors, categorizing variables, and formatting the data into tables or databases suitable for computation.
+Salah satu kekeliruan yang banyak dijumpai adalah menganggap bahwa ketika suatu analisis menyimpulkan "adanya perbedaan yang signifikan secara statistika" maka artinya ia "penting untuk diterapkan". Padahal, suatu perbedaan bisa saja bermakna secara statistika, tetapi perbedaan itu terlalu kecil untuk berdampak pada kehidupan sehari-hari.
 
-- [Data analysis](data-analysis.md) involves examining the data using statistical techniques to identify patterns, trends, or relationships. This step may include calculating summary statistics, testing hypotheses, or building models to explore underlying structures.
+## Isu dan perdebatan
 
-- [Data interpretation](data-interpretation.md) refers to assigning meaning to the results of analysis and drawing conclusions in the context of the original question or study. It connects statistical outcomes to real-world issues, allowing researchers to assess what the results suggest about the underlying phenomena.
+Dalam dunia sains, terdapat perdebatan antara penganut aliran frekuensi (frekuentis) dan aliran Bayes (Bayesian). Pendekatan frekuentis menilai bukti berdasarkan uji hipotesis, nilai p, dan selang kepercayaan. Sementara itu, pendekatan Bayesian mengintegrasikan data baru dengan pengetahuan sebelumnya (prior) untuk menghasilkan distribusi probabilitas atas hipotesis yang diuji. Keduanya valid, tetapi memiliki asumsi dan cara interpretasi yang berbeda.
 
-- [Data presentation](data-presentation.md) involves displaying and communicating the interpreted results in a clear and accessible format. Common forms include written reports, graphs, charts, and tables designed to convey key findings to both technical and general audiences.
-
-Together, these steps provide a coherent structure for statistical investigations, from the initial formulation of a question to the final communication of results.
-
-## Applications
-
-Statistics has broad applications across nearly all areas of modern life. In the natural and social sciences, it underpins experimental design, survey analysis, and the interpretation of empirical findings. In medicine, statistics is essential for clinical trials, epidemiological studies, and public health decision-making. Businesses use statistical methods for quality control, market analysis, and consumer forecasting.
-
-In economics, statistics supports the development of key indicators—such as inflation rates, gross domestic product, and employment figures—and underlies econometric modeling. Governments use statistical data for policy-making, population censuses, and program evaluation. More recently, the growth of data science and machine learning has expanded the role of statistics in fields such as artificial intelligence, algorithm development, and predictive analytics.
-
-## Tools and software
-
-Advances in computing technology have transformed how statistics is practiced. Today, most data analysis is conducted using specialized [statistical software](statistical-software.md) and programming languages. R and Python are widely used in academic and professional contexts due to their flexibility and extensive statistical libraries. Commercial tools such as SPSS, SAS, and Stata remain common in business, health, and social science research. For simpler analyses and visualization, spreadsheet programs like Microsoft Excel also offer accessible statistical tools.
-
-## Challenges and considerations
-
-Despite its power, statistics has limitations. The validity of statistical conclusions depends on careful study design, appropriate methodology, and the integrity of the research process. Common challenges include biased sampling, measurement errors, and the misinterpretation of statistical significance. Moreover, statistical models can oversimplify complex systems, and correlation does not imply causation.
-
-Ethical considerations have become increasingly important, especially in the context of big data and automated decision-making. Transparency, reproducibility, and the responsible communication of findings are essential to maintaining scientific integrity and public trust.
+Penggunaan ambang batas nilai p (seperti 0,05) untuk menentukan "hasil yang signifikan", telah banyak dikritik karena dianggap mendorong peneliti untuk melakukan manipulasi data demi mencapai hasil yang signifikan tersebut. Di sisi lain, pertumbuhan pendekatan Bayesian dalam riset ilmiah menimbulkan pertanyaan tentang bagaimana menentukan pengetahuan awal yang adil dan transparan, serta bagaimana cara mengomunikasikan hasil Bayesian kepada pembaca yang terbiasa dengan kerangka frekuentis.

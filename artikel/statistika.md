@@ -4,7 +4,7 @@ title: "Statistika"
 ---
 ## Definisi
 
-Statistika (bahasa Inggris: statistics) adalah disiplin ilmu yang mempelajari cara mengumpulkan, menyusun, menganalisis, menginterpretasikan, dan menyajikan data. Ia bertujuan untuk menghasilkan kesimpulan yang objektif dan valid di tengah kondisi yang mengandung ketidakpastian.
+Statistika (bahasa Inggris: statistics) adalah disiplin ilmu yang mempelajari cara mengumpulkan, menyusun, menganalisis, menginterpretasikan, dan menyajikan [data](artikel/data.md). Ia bertujuan untuk menghasilkan kesimpulan yang objektif dan valid di tengah kondisi yang mengandung ketidakpastian.
 
 ## Latar belakang
 
@@ -12,7 +12,7 @@ Alam semesta penuh dengan variasi dan ketidakpastian. Banyak fenomena yang bersi
 
 Statistika muncul untuk menyelesaikan masalah ini. Ia digunakan untuk mengukur variasi dan menentukan apakah suatu kumpulan data memiliki pola yang bermakna atau sekadar fluktuasi acak yang terjadi secara kebetulan. Statistika terus berkembang untuk membantu pengambilan keputusan yang rasional di berbagai bidang ilmu pengetahuan dan dalam kehidupan sehari-hari.
 
-## Sifat utama
+## Karakteristik
 
 Statistika terbagi menjadi dua cabang utama: statistika deskriptif dan statistika inferensial. Statistika deskriptif merangkum data yang ada tanpa menarik kesimpulan di luar data tersebut. Statistika inferensial menggunakan sampel untuk membuat pernyataan tentang populasi dengan memperhitungkan unsur ketidakpastian.
 

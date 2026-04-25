@@ -4,7 +4,7 @@ title: "Statistika"
 ---
 ## Definisi
 
-Statistika (bahasa Inggris: statistics) adalah disiplin ilmu yang mempelajari cara mengumpulkan, menyusun, menganalisis, menginterpretasikan, dan menyajikan [data](artikel/data.md). Ia bertujuan untuk menghasilkan kesimpulan yang objektif dan valid di tengah kondisi yang mengandung ketidakpastian.
+**Statistika** (bahasa Inggris: *statistics*) adalah disiplin ilmu yang mempelajari cara mengumpulkan, menyusun, menganalisis, menginterpretasikan, dan menyajikan [data](data.md). Ia bertujuan untuk menghasilkan kesimpulan yang objektif dan valid di tengah kondisi yang mengandung ketidakpastian.
 
 ## Latar belakang
 

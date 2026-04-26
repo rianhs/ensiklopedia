@@ -14,14 +14,14 @@ Statistika muncul untuk menyelesaikan masalah ini. Ia digunakan untuk mengukur v
 
 ## Karakteristik
 
-Statistika terbagi menjadi dua cabang utama: statistika deskriptif dan statistika inferensial. Statistika deskriptif merangkum data yang ada tanpa menarik kesimpulan di luar data tersebut. Statistika inferensial menggunakan sampel untuk membuat pernyataan tentang populasi dengan memperhitungkan unsur ketidakpastian.
+Statistika terbagi menjadi dua cabang utama: [statistika deskriptif](statistika-deskriptif.md) dan [statistika inferensial](statistika-inferensial.md). Statistika deskriptif merangkum data yang ada tanpa menarik kesimpulan di luar data tersebut. Statistika inferensial menggunakan sampel untuk membuat pernyataan tentang populasi dengan memperhitungkan unsur ketidakpastian.
 
 Dalam praktiknya, statistika biasanya diterapkan dengan urutan berikut:
-* Pengumpulan data adalah proses menghimpun dan mencatat data dari berbagai sumber secara sistematis untuk membuat kumpulan data.
-* Penyusunan data adalah proses menata dan mengatur data secara logis untuk memudahkan akses dan analisis data.
-* Analisis data adalah proses memeriksa data menggunakan teknik-teknik statistika untuk mengidentifikasi pola, tren, atau hubungan.
-* Penafsiran data adalah proses memberikan makna dan menarik kesimpulan dari data yang telah dianalisis untuk mengungkap informasi yang berguna dan mendukung pengambilan keputusan.
-* Penyajian data adalah proses menampilkan dan mengomunikasikan data yang telah dianalisis dan ditafsirkan dalam format yang jelas dan efektif kepada audiens.
+* Pengumpulan data, yaitu proses menghimpun dan mencatat data dari berbagai sumber secara sistematis untuk membuat kumpulan data.
+* Penyusunan data, yaitu proses menata dan mengatur data secara logis untuk memudahkan akses dan analisis data.
+* Analisis data, yaitu proses memeriksa data menggunakan teknik-teknik statistika untuk mengidentifikasi pola, tren, atau hubungan.
+* Penafsiran data, yaitu proses memberikan makna dan menarik kesimpulan dari data yang telah dianalisis untuk mengungkap informasi yang berguna dan mendukung pengambilan keputusan.
+* Penyajian data, yaitu proses menampilkan dan mengomunikasikan data yang telah dianalisis dan ditafsirkan dalam format yang jelas dan efektif kepada audiens.
 
 ## Penerapan dalam kedokteran hewan
 

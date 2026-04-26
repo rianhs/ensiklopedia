@@ -4,19 +4,19 @@ title: "Data"
 ---
 ## Definisi
 
-Data adalah nilai-nilai yang mewakili subjek atau fenomena tertentu. Ia dapat berupa angka, teks, gambar, rekaman suara, atau bentuk lain. Data merupakan bahan baku yang dikumpulkan, disusun, dianalisis, diinterpretasikan, dan disajikan oleh [statistika](statistika.md) untuk menghasilkan informasi yang bermakna.
+**Data** adalah nilai-nilai yang mewakili objek atau fenomena tertentu. Ia dapat berupa angka, teks, gambar, rekaman suara, atau bentuk lain. Data merupakan bahan baku yang dikumpulkan, disusun, dianalisis, diinterpretasikan, dan disajikan oleh [statistika](statistika.md) untuk menghasilkan informasi yang bermakna.
 
 ## Latar belakang
 
 Untuk memahami dunia, manusia mengamati banyak hal. Namun, pengamatan yang tidak dicatat tidak akan bisa dibandingkan, diulang, atau diuji oleh orang lain. Ketika ilmu pengetahuan berkembang dan pertanyaan yang diajukan semakin kompleks, manusia membutuhkan cara yang lebih terstruktur untuk mendokumentasikan hasil pengamatan tersebut. Sebelum konsep data dipelajari secara ilmiah, manusia hanya mengandalkan ingatan, cerita, atau kesan pribadi yang mudah berubah dan bias.
 
-Dengan adanya data, fenomena yang diamati dapat didokumentasikan dan diperiksa ulang, terlepas dari siapa yang mengamatinya dan kapan pengamatan itu dilakukan. Pada awalnya, data hanya digunakan untuk mendeskripsikan keadaan. Kini, data juga dipakai untuk menguji hipotesis dan membangun model yang merepresentasikan realitas.
+Dengan adanya data, objek atau fenomena yang diamati dapat didokumentasikan dan diperiksa ulang, terlepas dari siapa yang mengamatinya dan kapan pengamatan itu dilakukan. Pada awalnya, data hanya digunakan untuk mendeskripsikan keadaan. Kini, data juga dipakai untuk menguji hipotesis dan membangun model yang merepresentasikan realitas.
 
 ## Karakteristik
 
 Data merupakan bahan mentah. Ia tak memiliki konteks. Begitu data diberi konteks yang cukup, ia berubah menjadi informasi. Data dapat diklasifikasikan dengan berbagai cara, tergantung pada sifatnya dan bagaimana data tersebut disusun dan diperoleh. 
 
-Berdasarkan sifat dasarnya, data diklasifikasikan menjadi data kualitatif (kategoris) dan data kuantitatif (numeris). Klasifikasi ini berkaitan erat dengan konsep [skala pengukuran](artikel/skala-pengukuran.md), yang mengatur tingkat informasi yang dikandung oleh setiap jenis data.
+Berdasarkan sifat dasarnya, data diklasifikasikan menjadi data kualitatif (kategoris) dan data kuantitatif (numeris). Klasifikasi ini berkaitan erat dengan konsep [skala pengukuran](skala-pengukuran.md), yang mengatur tingkat informasi yang dikandung oleh setiap jenis data.
 * Data kualitatif merepresentasikan suatu kategori atau label, misalnya warna (hitam, putih, biru, dsb.) atau jenis kelamin (jantan, betina). 
 * Data kuantitatif merepresentasikan suatu besaran yang dapat diukur dan dinyatakan sebagai angka, misalnya berat (angka yang diikuti satuan kg) atau suhu (angka yang diikuti satuan °C). 
 
@@ -34,7 +34,7 @@ Data juga memiliki tingkat akurasi dan presisi. Kedua aspek ini dipengaruhi oleh
 
 ## Penerapan dalam kedokteran hewan
 
-Seorang dokter hewan mengumpulkan data saat memeriksa seekor anjing. Data yang dikumpulkan dapat berupa data kualitatif, seperti warna membran mukosa yang pucat, serta data kualitatif seperti frekuensi denyut jantung sebesar 120 kali per menit dan suhu tubuh 39,2 °C. Data mentah ini kemudian dibandingkan dengan standar fisiologis normal untuk spesies anjing. Ketika data tersebut dikumpulkan selama beberapa hari, dokter hewan tersebut dapat mengidentifikasi apakah anjing mengalami perbaikan atau perburukan kondisi. Keputusan untuk melanjutkan, mengganti, atau menghentikan terapi sangat bergantung pada interpretasi data ini.
+Seorang dokter hewan mengumpulkan data saat memeriksa seekor anjing. Data yang dikumpulkan dapat berupa data kualitatif, seperti warna membran mukosa yang pucat, serta data kualitatif seperti frekuensi denyut jantung sebesar 120 kali per menit dan suhu tubuh 39,2 °C. Data mentah ini kemudian dibandingkan dengan standar fisiologis normal untuk spesies anjing. Ketika data tersebut dikumpulkan selama beberapa hari, dokter hewan tersebut dapat mengidentifikasi apakah anjing mengalami perbaikan atau perburukan kondisi tubuh. Keputusan untuk melanjutkan, mengganti, atau menghentikan terapi sangat bergantung pada interpretasi data ini.
 
 ## Asumsi dan keterbatasan
 

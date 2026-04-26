@@ -424,6 +424,11 @@
         <button id="toggleSidebar" class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition" title="Toggle Sidebar">
           <i data-lucide="menu" class="w-5 h-5"></i>
         </button>
+        {% unless page.url == '/' or page.url == '/index.html' %}
+        <a href="{{ site.baseurl }}/" class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition text-slate-500 dark:text-slate-400 hover:text-brand dark:hover:text-brand" title="Beranda">
+          <i data-lucide="house" class="w-5 h-5"></i>
+        </a>
+        {% endunless %}
         <div class="hidden md:flex items-center gap-2 text-sm">
           {% unless page.url == '/' or page.url == '/index.html' %}
           <a href="{{ site.baseurl }}/" class="p-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition text-slate-500 dark:text-slate-400 hover:text-brand dark:hover:text-brand" title="Kembali ke Beranda">
@@ -456,15 +461,6 @@
     <!-- SIDEBAR -->
     <aside id="sidebar" class="fixed inset-y-0 left-0 z-30 w-72 bg-[#f5f0e8] dark:bg-[#0a0a0a] border-r border-slate-200 dark:border-slate-800 pt-20 overflow-y-auto transform -translate-x-full lg:translate-x-0 lg:sticky lg:top-0 lg:h-[calc(100vh-64px)] lg:pt-8">
       <nav class="px-4 pb-10">
-
-        <!-- Kembali ke beranda -->
-        {% unless page.url == '/' or page.url == '/index.html' %}
-        <a href="{{ site.baseurl }}/" class="flex items-center gap-2 px-3 py-2 mb-3 text-sm text-slate-500 dark:text-slate-400 hover:text-brand dark:hover:text-brand transition-colors group">
-          <i data-lucide="arrow-left" class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5"></i>
-          <span>Kembali ke Beranda</span>
-        </a>
-        <div class="border-t border-slate-200 dark:border-slate-800 mb-3"></div>
-        {% endunless %}
 
         <!-- SEARCH BOX -->
         <!-- search.json harus ada di root repo. Lihat instruksi di bawah. -->

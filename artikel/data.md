@@ -4,7 +4,7 @@ title: "Data"
 ---
 ## Definisi
 
-**Data** adalah nilai-nilai yang mewakili objek atau fenomena tertentu. Ia dapat berupa angka, teks, gambar, rekaman suara, atau bentuk lain. Data merupakan bahan baku yang dikumpulkan, disusun, dianalisis, diinterpretasikan, dan disajikan oleh [statistika](statistika.md) untuk menghasilkan informasi yang bermakna.
+**Data** adalah nilai-nilai yang mewakili objek atau fenomena tertentu. Ia dapat berupa angka, teks, gambar, rekaman suara, atau bentuk lain. Data merupakan bahan baku yang [dikumpulkan](pengumpulan-data.md), [disusun](penyusunan-data.md), [dianalisis](analisis-data.md), [ditafsirkan](penafsiran-data.md), dan [disajikan](penyajian-data.md) oleh [statistika](statistika.md) untuk menghasilkan informasi yang bermakna.
 
 ## Latar belakang
 

@@ -4,7 +4,7 @@ title: "Statistika"
 ---
 ## Definisi
 
-**Statistika** (bahasa Inggris: *statistics*) adalah disiplin ilmu yang mempelajari cara mengumpulkan, menyusun, menganalisis, menginterpretasikan, dan menyajikan [data](data.md). Ia bertujuan untuk menghasilkan kesimpulan yang objektif dan valid di tengah kondisi yang mengandung ketidakpastian.
+**Statistika** (bahasa Inggris: *statistics*) adalah disiplin ilmu yang mempelajari cara [mengumpulkan](pengumpulan-data.md), [menyusun](penyusunan-data.md), [menganalisis](analisis-data.md), [menafsirkan](penafsiran-data.md), dan [menyajikan](penyajian-data.md) [data](data.md). Ia bertujuan untuk menghasilkan kesimpulan yang objektif dan valid di tengah kondisi yang mengandung ketidakpastian.
 
 ## Latar belakang
 
@@ -17,11 +17,11 @@ Statistika muncul untuk menyelesaikan masalah ini. Ia digunakan untuk mengukur v
 Statistika terbagi menjadi dua cabang utama: [statistika deskriptif](statistika-deskriptif.md) dan [statistika inferensial](statistika-inferensial.md). Statistika deskriptif merangkum data yang ada tanpa menarik kesimpulan di luar data tersebut. Statistika inferensial menggunakan sampel untuk membuat pernyataan tentang populasi dengan memperhitungkan unsur ketidakpastian.
 
 Dalam praktiknya, statistika biasanya diterapkan dengan urutan berikut:
-* Pengumpulan data, yaitu proses menghimpun dan mencatat data dari berbagai sumber secara sistematis untuk membuat kumpulan data.
-* Penyusunan data, yaitu proses menata dan mengatur data secara logis untuk memudahkan akses dan analisis data.
-* Analisis data, yaitu proses memeriksa data menggunakan teknik-teknik statistika untuk mengidentifikasi pola, tren, atau hubungan.
-* Penafsiran data, yaitu proses memberikan makna dan menarik kesimpulan dari data yang telah dianalisis untuk mengungkap informasi yang berguna dan mendukung pengambilan keputusan.
-* Penyajian data, yaitu proses menampilkan dan mengomunikasikan data yang telah dianalisis dan ditafsirkan dalam format yang jelas dan efektif kepada audiens.
+* [Pengumpulan data](pengumpulan-data.md), yaitu proses menghimpun dan mencatat data dari berbagai sumber secara sistematis untuk membuat kumpulan data.
+* [Penyusunan data](penyusunan-data.md), yaitu proses menata dan mengatur data secara logis untuk memudahkan akses dan analisis data.
+* [Analisis data](analisis-data.md), yaitu proses memeriksa data menggunakan teknik-teknik statistika untuk mengidentifikasi pola, tren, atau hubungan.
+* [Penafsiran data](penafsiran-data.md), yaitu proses memberikan makna dan menarik kesimpulan dari data yang telah dianalisis untuk mengungkap informasi yang berguna dan mendukung pengambilan keputusan.
+* [Penyajian data](penyajian-data.md), yaitu proses menampilkan dan mengomunikasikan data yang telah dianalisis dan ditafsirkan dalam format yang jelas dan efektif kepada audiens.
 
 ## Penerapan dalam kedokteran hewan
 

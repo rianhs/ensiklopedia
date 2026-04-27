@@ -26,7 +26,7 @@ Sumber data mengacu pada entitas apa pun yang menghasilkan fakta yang dapat diam
 * Sumber data alami berasal dari sistem lingkungan atau biologis, misalnya kondisi cuaca, perilaku hewan, atau respons fisiologis tubuh. 
 * Sumber data buatan berasal dari sistem buatan manusia yang menghasilkan data melalui interaksi, transaksi, atau luaran otomatis. Contohnya adalah platform media sosial yang menghasilkan metrik interaksi penggunanya dan situs web belanja daring yang menghasilkan log transaksi jual-beli.
 
-Berdasarkan jenis sumbernya, pengumpulan data dibedakan menjadi primer (langsung dari objek) dan sekunder (menggunakan catatan yang sudah ada). 
+Berdasarkan jenis sumbernya, pengumpulan data dibedakan menjadi primer (langsung dari objek) dan sekunder (menggunakan data yang sudah ada). 
 * Pengumpulan data primer dilakukan langsung oleh seseorang untuk menjawab pertanyaan spesifik yang sedang dihadapi. Pengukuran langsung, survei, wawancara, dan eksperimen terkontrol adalah contohnya.
 * Pengumpulan data sekunder dilakukan dengan memanfaatkan data yang telah dikumpulkan sebelumnya oleh pihak lain untuk tujuan yang mungkin berbeda. Contoh sumber data sekunder antara lain rekam medis, basis data nasional, atau hasil kajian yang telah dipublikasikan.
 
@@ -34,15 +34,15 @@ Setelah mendefinisikan sumber data, langkah berikutnya adalah menentukan unit pe
 
 ### Metode 
 
-Berdasarkan tingkat manipulasi terhadap objek atau fenomena yang dikaji, pengumpulan data dapat bersifat observasional, eksperimental, atau survei.
+Berdasarkan tingkat manipulasi terhadap objek atau fenomena yang dikaji, pengumpulan data dapat bersifat observasional atau eksperimental. Selain itu, sejumlah orang menganggap survei sebagai pendekatan ketiga, sedangkan beberapa orang lain menganggap survei merupakan bagian dari pendekatan observasional.
 * Pada kajian observasional, seseorang hanya mengamati objek atau fenomena secara alami dan mengumpulkan datanya.
+  * Pada survei, seseorang mengumpulkan data berupa karakteristik, opini, atau perilaku orang lain.
 * Pada kajian eksperimental, seseorang dengan sengaja memanipulasi satu atau beberapa variabel untuk mengamati pengaruhnya terhadap variabel lain yang kemudian dikumpulkan datanya.
-* Pada survei, seseorang mengumpulkan data berupa karakteristik, opini, atau perilaku orang lain.
 
 Berdasarkan tingkat campur tangan manusia terhadap prosesnya, pengumpulan data dapat dilakukan secara secara manual, semiotomatis, maupun otomatis.
 * Pada pengumpulan data secara manual, seluruh proses penghimpunan dan pencatatan dilakukan sepenuhnya oleh manusia tanpa bantuan sistem otomatis. Contohnya adalah pendataan dan pencatatan suhu tubuh pada formulir pemeriksaan fisik atau wawancara langsung dengan responden.
 * Pada pengumpulan data secara semiotomatis, sebagian proses dilakukan oleh alat atau sistem, tetapi tetap memerlukan campur tangan manusia pada tahap tertentu. Contohnya adalah mesin penganalisis hematologi yang menghasilkan profil darah dalam bentuk angka secara otomatis, tetapi proses memasukkan sampel darah dan memindahkan angka dari mesin ke rekam medis tetap dilakukan oleh manusia secara manual.
-* Pada pengumpulan data secara otomatis, seluruh proses penghimpunan dan pencatatan dilakukan oleh sistem tanpa campur tangan manusia secara langsung. Contohnya adalah sensor lingkungan yang mencatat suhu dan kelembapan lingkungan secara berkala atau perangkat pemantau detak jantung yang merekam data secara kontinu.
+* Pada pengumpulan data secara otomatis, seluruh proses penghimpunan dan pencatatan dilakukan oleh sistem tanpa campur tangan manusia secara langsung. Contohnya adalah sensor yang mencatat suhu dan kelembapan lingkungan secara berkala atau perangkat pemantau detak jantung yang merekam data secara kontinu.
 
 Selain itu, pengumpulan data memiliki dimensi waktu. Data dapat dikumpulkan secara potong lintang (satu waktu) atau longitudinal (berulang kali dalam periode tertentu). Pilihan ini dipengaruhi oleh jenis pertanyaan yang akan dijawab, seperti perbandingan antarkelompok atau perubahan data dari waktu ke waktu.
 
@@ -54,7 +54,7 @@ Instrumen pengumpulan data, baik berupa alat ukur fisik, alat uji diagnostik, ku
 
 ## Penerapan dalam kedokteran hewan
 
-Sebuah perusahaan penggemukan sapi ingin memantau status gizi sapi potong di beberapa unitnya menjelang Iduladha. Variabel yang akan diukur ditetapkan terlebih dahulu, yaitu skor kondisi tubuh, diameter lingkar dada, dan berat badan. Untuk masing-masing variabel, definisi operasional disusun secara jelas, misalnya skor kondisi tubuh dinilai menggunakan skala lima poin yang terstandarisasi, sedangkan berat badan diukur menggunakan timbangan ternak yang telah dikalibrasi. 
+Sebuah perusahaan penggemukan sapi ingin memantau status gizi sapi potong di beberapa unitnya menjelang Iduladha. Variabel yang akan diukur ditetapkan terlebih dahulu, yaitu skor kondisi tubuh, diameter lingkar dada, dan berat badan. Untuk masing-masing variabel, definisi operasional disusun secara jelas, misalnya skor kondisi tubuh dinilai menggunakan skala lima poin yang terstandarisasi, sedangkan berat badan diukur menggunakan beberapa timbangan ternak. 
 
 Di lapangan, tim menemukan bahwa timbangan di satu lokasi menunjukkan angka yang tidak konsisten antarpengukuran. Alih-alih tetap menggunakan timbangan tersebut, tim memutuskan untuk mengganti instrumen sebelum melanjutkan pengumpulan data. Keputusan ini didasari pemahaman bahwa data berat badan yang tidak reliabel tidak bisa diperbaiki pada tahap analisis. Kesalahan pengukuran yang masuk ke dalam data akan menyertai seluruh proses berikutnya.
 

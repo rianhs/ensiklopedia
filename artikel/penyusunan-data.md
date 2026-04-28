@@ -4,7 +4,7 @@ title: "Penyusunan data"
 ---
 ## Definisi
 
-**Penyusunan data** (bahasa Inggris: *data organization*) adalah proses menata dan mengatur [data](data.md) yang telah dikumpulkan ke dalam struktur yang logis dan konsisten sehingga data tersebut mudah diakses, diperiksa, dan dianalisis. Proses ini menjembatani tahap [pengumpulan data](pengumpulan-data.md) dan [analisis data](analisis-data.md) dalam alur [statistika](statistika.md).
+**Penyusunan data** (bahasa Inggris: *data organization*) adalah proses menata dan mengatur [data](data.md) yang telah dikumpulkan ke dalam struktur yang logis dan konsisten sehingga data tersebut mudah diakses, diperiksa, dan diolah. Proses ini menjembatani tahap [pengumpulan data](pengumpulan-data.md) dan [analisis data](analisis-data.md) dalam alur [statistika](statistika.md).
 
 ## Latar belakang
 
@@ -33,7 +33,7 @@ Pembersihan data adalah proses mengidentifikasi dan menangani nilai-nilai yang b
 
 * Inkonsistensi format, yang terjadi ketika nilai yang secara substantif sama dicatat dalam cara yang berbeda-beda, seperti perbedaan kapitalisasi, penggunaan singkatan yang tidak seragam, atau format tanggal yang berbeda.
 
-## Penerapan dalam kedokteran hewan
+## Contoh penerapan
 
 Seorang mahasiswa menyelesaikan pengumpulan data untuk penelitian skripsinya tentang profil hematologi ayam broiler dari tiga kandang yang berbeda. Data dikumpulkan selama dua minggu oleh dua orang pengambil sampel, dicatat di formulir kertas, dan kemudian dimasukkan ke dalam lembar spreadsheet.
 
@@ -41,7 +41,7 @@ Ketika si mahasiswa mulai memeriksa datanya, ia menemukan beberapa masalah. Pada
 
 Mahasiswa ini memperbaiki inkonsistensi kode, mengoreksi kesalahan entri setelah memverifikasinya dengan formulir asli, dan menghapus baris duplikat. Baru setelah seluruh masalah ini diselesaikan, ia melanjutkan ke tahap analisis. Tanpa proses penyusunan data, analisis hematologinya akan dilakukan pada data yang cacat tanpa ia sadari.
 
-## Asumsi dan keterbatasan
+## Asumsi dan limitasi
 
 Penyusunan data didasarkan pada asumsi bahwa proses transformasi data dari bentuk mentah ke format terstruktur dilakukan secara akurat tanpa mengubah makna aslinya. Keterbatasan utama dalam tahap ini adalah risiko hilangnya nuansa informasi saat data kualitatif yang kaya akan detail disederhanakan melalui proses pengodean yang kaku.
 

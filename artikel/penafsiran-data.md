@@ -4,20 +4,20 @@ title: "Penafsiran data"
 ---
 ## Definisi
 
-** Penafsiran data**  (bahasa Inggris: *data interpretation*) adalah proses memberikan makna pada hasil analisis data dengan menghubungkannya kembali ke pertanyaan penelitian, konteks keilmuan, dan pengetahuan yang sudah ada. Penafsiran mengubah hasil analisis yang berupa angka menjadi pernyataan tentang fenomena yang diteliti.
+** Penafsiran data**  (bahasa Inggris: *data interpretation*) adalah proses memberikan makna pada hasil [analisis data](analisis-data.md) dengan menghubungkannya kembali ke pertanyaan penelitian, konteks keilmuan, dan pengetahuan yang sudah ada. Penafsiran mengubah hasil analisis yang berupa angka menjadi pernyataan tentang fenomena yang diteliti.
 
 ## Latar belakang
 
 Hasil analisis data belum memiliki arti tanpa interpretasi. Sebagai contoh, nilai rata-rata, selang kepercayaan, atau nilai p hanya menunjukkan karakteristik matematis dari data. Tanpa penafsiran, hasil tersebut tidak menjawab pertanyaan ilmiah yang mendasarinya.
 
-Tanpa penafsiran yang cermat, hasil analisis rentan disalahpahami atau disalahgunakan. Penafsiran adalah tahap ketika peneliti menentukan apa arti suatu temuan, apakah temuan tersebut relevan, dan bagaimana temuan itu harus dipahami dalam konteks yang lebih luas.
+Jika penafsiran tidak cermat, hasil analisis rentan disalahpahami atau disalahgunakan. Penafsiran merupakan tahap ketika peneliti menentukan apa arti suatu temuan, apakah temuan tersebut relevan, dan bagaimana temuan itu harus dipahami dalam konteks yang lebih luas.
 
 
 ## Karakteristik
 
-Penafsiran data selalu bergantung pada konteks. Nilai yang sama dapat memiliki arti yang berbeda tergantung pada situasi lingkungan tempat data dikumpulkan. Oleh karena itu, interpretasi tidak hanya didasarkan pada hasil numeris, tetapi juga pada pengetahuan ilmiah dan kerangka teoretis yang digunakan.
+Penafsiran data selalu bergantung pada konteks. Nilai yang sama dapat memiliki arti yang berbeda tergantung pada situasi lingkungan tempat data dikumpulkan. Oleh karena itu, penafsiran tidak hanya didasarkan pada hasil numeris, tetapi juga pada pengetahuan ilmiah dan kerangka teoretis yang digunakan.
 
-Penafsiran data bergerak pada dua tingkat yang berbeda, tetapi saling bergantung.
+Penafsiran data dilakukan pada dua tingkat yang berbeda, tetapi saling bergantung.
 
 Tingkat pertama adalah penafsiran statistika, yaitu membaca hasil metode statistika secara tepat sesuai dengan apa yang memang diklaim oleh metode tersebut. Pada tingkat ini, peneliti menentukan apakah perbedaan atau hubungan yang ditemukan secara statistika konsisten dengan hipotesis yang diuji, seberapa besar ukuran efeknya, dan seberapa lebar rentang ketidakpastiannya. Untuk membuat penafsiran yang tepat di tingkat ini, seseorang harus memiliki pemahaman tentang apa yang boleh dan tidak boleh disimpulkan dari suatu metode statistika tertentu.
 
@@ -30,9 +30,9 @@ Dua konsep yang sering dicampuradukkan dalam penafsiran adalah signifikansi stat
 
 ## Penerapan dalam kedokteran hewan
 
-Seorang dokter hewan peneliti ingin mengetahui apakah formulasi pakan baru dapat meningkatkan produksi susu pada sapi perah. Setelah melakukan analisis data, ia menemukan bahwa sapi yang diberi pakan baru mengalami peningkatan rata-rata produksi susu sebesar 0,2 liter per hari dibandingkan kelompok kontrol, dengan hasil uji statistika menunjukkan nilai p = 0,02.
+Seorang dokter hewan peneliti ingin mengetahui apakah formulasi pakan baru dapat meningkatkan produksi susu pada sapi perah. Setelah melakukan analisis data, ia menemukan bahwa sapi yang diberi pakan baru mengalami peningkatan rata-rata produksi susu sebesar 0,2 liter per hari dibandingkan kelompok kontrol, dengan hasil uji statistika menunjukkan nilai p = 0,03.
 
-Pada tahap penafsiran, peneliti tersebut mengakui bahwa secara statistika, temuan ini signifikan karena nilai p berada di bawah ambang batas 0,05. Namun, ia harus melakukan penafsiran secara klinis dan ekonomi. Jika harga formulasi pakan baru tersebut jauh lebih mahal daripada pakan standar, peningkatan hanya 0,2 liter per hari mungkin dianggap tidak signifikan secara praktis karena tidak mampu menutupi kenaikan biaya operasional. Dalam skenario ini, penafsiran data yang tepat membimbing si dokter hewan untuk tidak merekomendasikan formulasi pakan tersebut meskipun hasilnya "signifikan secara statistika", karena nilai manfaatnya terlalu kecil bagi peternak.
+Pada tahap penafsiran, peneliti tersebut mengakui bahwa secara statistika, temuan ini signifikan karena nilai p berada di bawah ambang batas 0,05. Namun, ia harus melakukan penafsiran secara klinis dan ekonomi. Jika harga formulasi pakan baru tersebut jauh lebih mahal daripada pakan standar, peningkatan hanya 0,2 liter per hari mungkin dianggap tidak signifikan secara praktis karena tidak mampu menutupi kenaikan biaya operasional. Pada skenario ini, penafsiran data yang tepat memungkinkan si dokter hewan untuk tidak merekomendasikan formulasi pakan tersebut meskipun hasilnya "signifikan secara statistika", karena nilai manfaatnya terlalu kecil bagi peternak.
 
 ## Asumsi dan keterbatasan
 

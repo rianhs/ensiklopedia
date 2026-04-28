@@ -39,7 +39,7 @@ Keempat skala ini dapat diringkas sebagai berikut:
 | Interval | ✓ | ✓ |  ✓ |  — | 
 | Rasio    | ✓ | ✓ |  ✓ |  ✓ | 
 
-## Penerapan dalam kedokteran hewan
+## Contoh penerapan
 
 Di sebuah peternakan sapi, seorang dokter hewan berurusan dengan berbagai jenis skala pengukuran. 
 * Saat ia mencatat "bangsa sapi" (misalnya limousin, simmental, atau FH), ia sedang menggunakan skala nominal untuk mengategorikan sapi. 
@@ -49,7 +49,7 @@ Di sebuah peternakan sapi, seorang dokter hewan berurusan dengan berbagai jenis 
 
 Pemahaman mengenai skala interval memastikan dokter hewan tersebut dapat melakukan analisis yang sesuai dengan sifat data, sehingga interpretasi hasilnya tetap valid.
 
-## Asumsi dan keterbatasan
+## Asumsi dan limitasi
 
 Skala pengukuran mengasumsikan bahwa setiap variabel dapat diklasifikasikan dengan jelas ke dalam salah satu dari empat tingkatan tersebut. Namun, dalam praktiknya, batas antartingkat tidak selalu tegas. Data ordinal dengan banyak tingkatan, misalnya skor kepuasan dari 1 hingga 100, sering diperlakukan sebagai data interval untuk memudahkan analisis, dengan asumsi bahwa jarak antarnilainya cukup seragam. Contoh lain adalah menghitung rata-rata tingkat keparahan penyakit. Hal ini dapat menghasilkan kesimpulan yang tidak tepat.
 

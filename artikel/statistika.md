@@ -23,11 +23,11 @@ Dalam praktiknya, statistika biasanya diterapkan dengan urutan berikut:
 * [Penafsiran data](penafsiran-data.md), yaitu proses memberikan makna dan menarik kesimpulan dari data yang telah dianalisis untuk mengungkap informasi yang berguna dan mendukung pengambilan keputusan.
 * [Penyajian data](penyajian-data.md), yaitu proses menampilkan dan mengomunikasikan data yang telah dianalisis dan ditafsirkan dalam format yang jelas dan efektif kepada audiens.
 
-## Penerapan dalam kedokteran hewan
+## Contoh penerapan
 
 Seorang dokter hewan ingin mengetahui efek pemberian formulasi pakan yang baru terhadap laju pertumbuhan berat badan sapi potong. Ia tidak dapat mengambil kesimpulan hanya dengan melihat laju pertumbuhan seekor sapi. Dengan statistika, ia membagi populasi sapi menjadi dua kelompok, yaitu kelompok perlakuan (pakan baru) dan kelompok kontrol (pakan standar). Ia kemudian membandingkan kenaikan berat badan pada kedua kelompok tersebut menggunakan uji statistika. Jika hasil analisis menunjukkan peningkatan berat badan yang bermakna secara matematis dan biologis, dokter hewan tersebut memiliki landasan ilmiah yang kuat untuk menyatakan bahwa pakan baru tersebut memang lebih baik. Ia pun dapat merekomendasikan perubahan manajemen nutrisi dengan risiko kesalahan yang terukur.
 
-## Asumsi dan keterbatasan
+## Asumsi dan limitasi
 
 Statistika hanyalah alat bantu. Ia tidak bisa menolong desain penelitian yang buruk. Jika cara pengumpulan datanya cacat, maka teknik statistika secanggih apa pun tidak akan mampu menghasilkan kesimpulan yang tepat. Selain itu, setiap uji statistika bertumpu pada asumsi tertentu tentang data. Statistika juga sering disalahpahami sebagai alat untuk membuktikan kepastian yang mutlak, padahal ilmu ini hanya bekerja pada tingkat probabilitas. 
 

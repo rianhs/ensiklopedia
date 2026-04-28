@@ -32,11 +32,11 @@ Data juga memiliki tingkat akurasi dan presisi. Kedua aspek ini dipengaruhi oleh
 * Akurasi menunjukkan sejauh mana data tersebut benar-benar merepresentasikan fenomena yang diukur.
 * Presisi menunjukkan konsistensi hasil jika pengukuran dilakukan berulang kali dalam kondisi yang serupa.
 
-## Penerapan dalam kedokteran hewan
+## Contoh penerapan
 
 Seorang dokter hewan mengumpulkan data saat memeriksa seekor anjing. Data yang dikumpulkan dapat berupa data kualitatif, seperti warna membran mukosa yang pucat, serta data kualitatif seperti frekuensi denyut jantung sebesar 120 kali per menit dan suhu tubuh 39,2 °C. Data mentah ini kemudian dibandingkan dengan standar fisiologis normal untuk spesies anjing. Ketika data tersebut dikumpulkan selama beberapa hari, dokter hewan tersebut dapat mengidentifikasi apakah anjing mengalami perbaikan atau perburukan kondisi tubuh. Keputusan untuk melanjutkan, mengganti, atau menghentikan terapi sangat bergantung pada interpretasi data ini.
 
-## Asumsi dan keterbatasan
+## Asumsi dan limitasi
 
 Data bukanlah realitas itu sendiri, melainkan representasi dari realitas. Ia hanyalah bagian dari suatu fenomena yang ditangkap dengan cara tertentu. Cara pengumpulan data menentukan apakah data tersebut berkualitas atau tidak. Kesalahan dalam pengumpulan data, baik karena faktor manusia maupun keterbatasan instrumen, dapat menyebabkan data tidak akurat.
 

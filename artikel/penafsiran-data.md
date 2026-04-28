@@ -13,7 +13,7 @@ Hasil analisis data belum memiliki arti tanpa interpretasi. Sebagai contoh, nila
 Jika penafsiran tidak cermat, hasil analisis rentan disalahpahami atau disalahgunakan. Penafsiran merupakan tahap ketika peneliti menentukan apa arti suatu temuan, apakah temuan tersebut relevan, dan bagaimana temuan itu harus dipahami dalam konteks yang lebih luas.
 
 
-## Karakteristik dan komponen
+## Karakteristik
 
 Penafsiran data selalu bergantung pada konteks. Nilai yang sama dapat memiliki arti yang berbeda tergantung pada situasi lingkungan tempat data dikumpulkan. Oleh karena itu, penafsiran tidak hanya didasarkan pada hasil numeris, tetapi juga pada pengetahuan ilmiah dan kerangka teoretis yang digunakan.
 

@@ -34,7 +34,7 @@ Data juga memiliki tingkat akurasi dan presisi. Kedua aspek ini dipengaruhi oleh
 
 ## Contoh penerapan
 
-Seorang dokter hewan mengumpulkan data saat memeriksa seekor anjing. Data yang dikumpulkan dapat berupa data kualitatif, seperti warna membran mukosa yang pucat, serta data kualitatif seperti frekuensi denyut jantung sebesar 120 kali per menit dan suhu tubuh 39,2 °C. Data mentah ini kemudian dibandingkan dengan standar fisiologis normal untuk spesies anjing. Ketika data tersebut dikumpulkan selama beberapa hari, dokter hewan tersebut dapat mengidentifikasi apakah anjing mengalami perbaikan atau perburukan kondisi tubuh. Keputusan untuk melanjutkan, mengganti, atau menghentikan terapi sangat bergantung pada interpretasi data ini.
+Seorang dokter hewan mengumpulkan data saat memeriksa seekor anjing. Data yang dikumpulkan dapat berupa data kualitatif, seperti warna membran mukosa yang pucat, serta data kuantitatif seperti frekuensi denyut jantung sebesar 120 kali per menit dan suhu tubuh 39,2 °C. Data mentah ini kemudian dibandingkan dengan standar fisiologis normal untuk spesies anjing. Ketika data tersebut dikumpulkan selama beberapa hari, dokter hewan tersebut dapat mengidentifikasi apakah anjing mengalami perbaikan atau perburukan kondisi tubuh. Keputusan untuk melanjutkan, mengganti, atau menghentikan terapi sangat bergantung pada interpretasi data ini.
 
 ## Asumsi dan limitasi
 

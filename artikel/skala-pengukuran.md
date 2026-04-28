@@ -24,13 +24,15 @@ Skala pengukuran dibedakan menjadi empat tingkat yang bersifat hierarkis. Setiap
 
 * Skala interval menambahkan sifat jarak antarkategori yang terukur dan konsisten. Perbedaan jarak antara peringkat pertama dan kedua sama besarnya dengan jarak antara peringkat kedua dan ketiga. Namun, skala ini tidak memiliki titik nol yang absolut. Pada skala interval, nilai nol hanya menunjukkan kesepakatan, bukan ketiadaan atribut yang diukur. Operasi matematika tambahan pada skala ini adalah pengurangan (selisih) dan identifikasi nilai rata-rata (mean).
 
-	Contoh skala interval adalah suhu tubuh yang dinyatakan dengan angka dengan satuan tertentu, misalnya °C. Selisih antara 37 °C dan 38 °C setara dengan selisih antara 38 °C dan 39 °C. Selain itu, jarak antara 30 °C dan 35 °C dapat dinyatakan sebesar 5 °C. Dari 10 ekor hewan, kita dapat menghitung nilai rata-rata suhu tubuhnya, misalnya 37,2 °C.
+	Contoh skala interval adalah penunjukan waktu suatu peristiwa menggunakan format jam, misalnya pukul 06.00. Jarak waktu antara pukul 06.00 dan pukul 08.00 adalah 2 jam, setara dengan jarak antara pukul 08.00 dan 10.00. Namun, pukul 00.00 bukanlah titik ketiadaan waktu secara mutlak, melainkan sekadar titik kesepakatan dimulainya hari yang baru. Dari beberapa peristiwa, kita dapat menghitung nilai rata-ratanya, misalnya waktu rata-rata dari 10 peristiwa adalah pukul 07.30.
 
-* Skala rasio adalah tingkat tertinggi. Ia memiliki semua sifat sebelumnya ditambah dengan keberadaan titik nol yang absolut (mutlak). Artinya, angka nol merepresentasikan ketiadaan atribut yang diukur. Pada skala ini, semua operasi matematika dapat dilakukan, termasuk pernyataan rasio (perbadnginan).
+* Skala rasio adalah tingkat tertinggi. Ia memiliki semua sifat sebelumnya ditambah dengan keberadaan titik nol yang absolut (mutlak). Artinya, angka nol merepresentasikan ketiadaan atribut yang diukur. Pada skala ini, semua operasi matematika dapat dilakukan, termasuk pernyataan rasio (perbandingan).
 
-	Contoh skala rasio adalah berat badan yang dinyatakan dengan angka dengan satuan tertentu, misalnya kg. Seekor sapi dengan berat 200 kg memiliki berat dua kali lipat sapi dengan berat 100 kg. 
+	Contoh skala rasio adalah volume air di dalam botol minum yang dinyatakan dengan angka dengan satuan tertentu, misalnya mililiter (ml). Sebuah botol yang berisi air 500 ml memiliki volume dua kali lipat lebih banyak dibandingkan botol yang berisi 250 ml. Selain itu, nilai 0 ml benar-benar bermakna ketiadaan air secara mutlak di dalam botol tersebut.
 
-Keempat skala ini dapat diringkas sebagai berikut:
+Keempat skala pengukuran ini berkaitan yang erat dengan klasifikasi data berdasarkan sifat dasarnya. Secara umum, skala nominal dan ordinal melekat pada data kualitatif (kategoris), karena nilainya berfungsi sebagai label pembeda atau penunjuk urutan. Semetara itu, skala interval dan rasio melekat pada data kuantitatif (numeris), karena nilainya merepresentasikan besaran yang terukur dan dapat dioperasikan secara matematis. Meskipun demikian, tidak semua data yang berwujud angka secara otomatis berskala interval atau rasio. Angka terkadang digunakan sebagai label kategori (nominal) atau penunjuk peringkat (ordinal).
+
+Keempat skala tersebut dapat diringkas sebagai berikut:
 
 | Skala | Punya label | Punya urutan | Punya jarak seragam | Punya nol absolut
 | --- | :---: | :---: | :---: | :---: |

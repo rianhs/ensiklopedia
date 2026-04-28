@@ -12,7 +12,7 @@ Data yang telah disusun dengan rapi masih belum menjawab pertanyaan penelitian. 
 
 Analisis data merupakan inti dari proses [statistika](statistika.md) karena di sinilah data mulai dihubungkan dengan pertanyaan yang ingin dijawab. Pada tahap ini, metode-metode statistika digunakan untuk mengolah data sehingga pola yang tersembunyi dapat diungkap dan kesimpulan dapat ditarik dengan tingkat kepercayaan yang terukur.
 
-## Karakteristik dan komponen
+## Karakteristik
 
 Metode yang dipilih dalam analisis data disesuaikan dengan jenis [variabel](variabel.md), [skala pengukuran](skala-pengukuran.md), dan tujuan analisis. Secara umum, analisis dapat dibedakan menjadi analisis deskriptif dan inferensial.
 

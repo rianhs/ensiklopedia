@@ -28,7 +28,7 @@ Apa pun formatnya, penyajian data yang efektif mengikuti beberapa prinsip, antar
 * Warna dan simbol digunakan secara konsisten dan dapat dibedakan bahkan oleh pembaca dengan keterbatasan persepsi warna. 
 * Judul, label, dan keterangan harus cukup informatif sehingga grafik atau tabel dapat dipahami tanpa harus membaca seluruh teks yang menyertainya.
 
-## Penerapan dalam kedokteran hewan
+## Contoh penerapan
 
 Seorang dokter hewan peneliti telah menyelesaikan studi tentang efektivitas dua metode untuk menangani dehidrasi pada pedet (anak sapi). Ia harus menyajikan temuannya pada dua konteks yang berbeda: sebuah artikel ilmiah untuk jurnal dan presentasi singkat untuk peternak di lapangan.
 
@@ -38,7 +38,7 @@ Untuk peternak, ia memilih grafik batang sederhana yang menunjukkan persentase p
 
 Keputusan tentang format penyajian bukan tentang mana yang lebih baik, melainkan tentang mana yang paling tepat untuk audiens dan tujuan komunikasi yang spesifik.
 
-## Asumsi dan keterbatasan
+## Asumsi dan limitasi
 
 Penyajian data mengasumsikan bahwa audiens memiliki tingkat literasi yang cukup untuk memahami format yang digunakan. Jika penyajian terlalu kompleks atau tidak sesuai dengan latar belakang audiens, informasi dapat disalahartikan.
 

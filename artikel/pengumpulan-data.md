@@ -52,13 +52,13 @@ Instrumen pengumpulan data, baik berupa alat ukur fisik, alat uji diagnostik, ku
 * Validitas adalah kemampuan instrumen untuk benar-benar mengukur apa yang memang dimaksudkan untuk diukur. 
 * Reliabilitas adalah kemampuan instrumen untuk menghasilkan nilai yang konsisten ketika digunakan berulang kali, baik pada waktu yang berbeda maupun oleh orang yang berbeda, pada kondisi yang sama. 
 
-## Penerapan dalam kedokteran hewan
+## Contoh penerapan
 
 Sebuah perusahaan penggemukan sapi ingin memantau status gizi sapi potong di beberapa unitnya menjelang Iduladha. Variabel yang akan diukur ditetapkan terlebih dahulu, yaitu skor kondisi tubuh, diameter lingkar dada, dan berat badan. Untuk masing-masing variabel, definisi operasional disusun secara jelas, misalnya skor kondisi tubuh dinilai menggunakan skala lima poin yang terstandarisasi, sedangkan berat badan diukur menggunakan beberapa timbangan ternak. 
 
 Di lapangan, tim menemukan bahwa timbangan di satu lokasi menunjukkan angka yang tidak konsisten antarpengukuran. Alih-alih tetap menggunakan timbangan tersebut, tim memutuskan untuk mengganti instrumen sebelum melanjutkan pengumpulan data. Keputusan ini didasari pemahaman bahwa data berat badan yang tidak reliabel tidak bisa diperbaiki pada tahap analisis. Kesalahan pengukuran yang masuk ke dalam data akan menyertai seluruh proses berikutnya.
 
-## Asumsi dan keterbatasan
+## Asumsi dan limitasi
 
 Pengumpulan data mengasumsikan bahwa definisi operasional variabel sudah jelas, instrumen yang digunakan valid dan reliabel, serta sampel yang diambil dapat mewakili populasi target. Ketika salah satu asumsi ini tidak terpenuhi, kesalahan yang terjadi pada tahap pengumpulan data tidak dapat diperbaiki oleh analisis yang dilakukan kemudian.
 

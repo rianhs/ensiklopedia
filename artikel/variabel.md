@@ -45,13 +45,13 @@ Variabel juga dibedakan berdasarkan perannya dalam hubungan antarvariabel. Merek
 
 Selain keduanya, terdapat variabel perancu atau pengganggu, yaitu variabel yang berhubungan dengan variabel bebas sekaligus variabel terikat. Ia berpotensi mengaburkan hubungan antara variabel bebas dan terikat. Pada penelitian, mereka biasanya dikendalikan agar nilainya cenderung seragam sehingga disebut variabel kontrol.
 
-## Penerapan dalam kedokteran hewan
+## Contoh penerapan
 
 Seorang peneliti ingin mengetahui apakah jenis pakan memengaruhi kadar kolesterol darah pada kelinci percobaan. Dalam penelitian ini, jenis pakan adalah variabel bebas karena peneliti yang menentukan variasinya (pakan A dan pakan B). Kadar kolesterol darah adalah variabel terikat karena nilainya diukur sebagai respons terhadap perbedaan jenis pakan. Bobot badan kelinci pada awal penelitian berpotensi menjadi variabel perancu karena perbedaan bobot awal dapat memengaruhi kadar kolesterol, terlepas dari apa pun jenis pakannya.
 
 Ketika peneliti gagal mengidentifikasi variabel perancu ini sejak awal, ia berisiko menarik kesimpulan yang keliru. Misalnya, perbedaan kadar kolesterol yang ia temukan mungkin bukan diakibatkan oleh perbedaan pakan, melainkan oleh perbedaan bobot badan awal yang tidak diseragamkan.
 
-## Asumsi dan keterbatasan
+## Asumsi dan limitasi
 
 Sebuah variabel hanya bermakna jika ia didefinisikan dengan jelas pada konteks tertentu. Hal ini dikenal dengan istilah "definisi operasional" bagi suatu variabel. Cara pengukuran variabel tersebut harus ditetapkan secara mendetail sebelum datanya dikumpulkan. Pendefinisian ini sangat penting, terutama bagi variabel laten. Konsep abstrak seperti "stres" atau "kesejahteraan" tidak bisa langsung dianalisis tanpa terlebih dahulu diturunkan menjadi indikator-indikator yang terukur. Pilihan indikator yang kurang tepat akan menghasilkan pengukuran yang tidak merepresentasikan konstruk (variabel laten) yang dimaksud.
 

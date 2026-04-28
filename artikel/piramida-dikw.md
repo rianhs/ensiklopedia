@@ -4,7 +4,7 @@ title: "Piramida DIKW"
 ---
 ## Definisi
 
-**Piramida DIKW** (singkatan dari Data, Information, Knowledge, Wisdom) adalah sebuah model hierarkis yang menggambarkan bagaimana [data](data.md) mentah dapat diolah secara bertahap menjadi informasi, kemudian pengetahuan, dan akhirnya menjadi kebijaksanaan dalam pengambilan keputusan. Model ini menekankan bahwa setiap tingkat yang lebih tinggi membutuhkan pemrosesan, konteks, dan pemahaman yang lebih mendalam dibandingkan tingkat di bawahnya.
+**Piramida DIKW** (singkatan dari **Piramida Data, Information, Knowledge, Wisdom**) adalah sebuah model hierarkis yang menggambarkan bagaimana [data](data.md) mentah dapat diolah secara bertahap menjadi informasi, kemudian pengetahuan, dan akhirnya menjadi kebijaksanaan dalam pengambilan keputusan. Model ini menekankan bahwa setiap tingkat yang lebih tinggi membutuhkan pemrosesan, konteks, dan pemahaman yang lebih mendalam dibandingkan tingkat di bawahnya.
 
 ## Latar belakang
 
@@ -26,11 +26,11 @@ Piramida DIKW terdiri dari empat lantai atau tingkatan yang berurutan dari bawah
 
 Hubungan antartingkat bersifat transformatif, bukan sekadar akumulatif. Naik dari satu tingkat ke tingkat berikutnya membutuhkan proses aktif, baik dalam bentuk interpretasi, integrasi, atau penilaian, yang tidak terjadi secara otomatis hanya karena jumlah data bertambah.
 
-## Penerapan dalam kedokteran hewan
+## Contoh penerapan
 
 Seorang dokter hewan menerima hasil pemeriksaan berupa kadar leukosit, suhu tubuh, dan frekuensi napas pada seekor kucing. Nilai-nilai tersebut adalah data. Ketika ia membandingkannya dengan nilai rujukan dan menemukan adanya peningkatan leukosit dan demam, ia mendapatkan informasi bahwa kucing tersebut mengalami radang. Dengan menggabungkan informasi tersebut dengan pengetahuan tentang patofisiologi infeksi, ia menyimpulkan adanya infeksi bakteri. Pada tahap ini, ia telah mencapai tingkat pengetahuan. Ketika ia memutuskan terapi antibiotik dengan mempertimbangkan jenis bakteri, kondisi pasien, risiko resistansi, dan faktor pemilik hewan, ia menerapkan kebijaksanaan.
 
-## Asumsi dan keterbatasan
+## Asumsi dan limitasi
 
 Piramida DIKW berasumsi bahwa proses pengolahan data bersifat linear dan progresif, padahal dalam realitasnya, seseorang sering kali memerlukan kebijaksanaan terlebih dahulu untuk menentukan jenis data apa yang relevan untuk dikumpulkan. Keterbatasan utama model ini adalah prinsip "*garbage in, garbage out*". Jika data di tingkat dasar cacat atau bias, maka seluruh bangunan informasi dan pengetahuan di atasnya akan menghasilkan kebijaksanaan yang keliru. Selain itu, model ini sering dikritik karena terlalu menyederhanakan proses kognitif yang kompleks dan tidak memberikan batasan yang tegas mengenai kapan informasi berubah menjadi pengetahuan karena hal tersebut sering kali bergantung pada persepsi subjektif individu yang memprosesnya.
 
